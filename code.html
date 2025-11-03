@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>SLB Solutions — Portfolio</title>
+	<meta name="description" content="SLB Solutions - professional software & consulting solutions" />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<style>
+		:root{--accent:#0b6efd;--bg:#0f1724;--card:#0b1020;--muted:#94a3b8;--glass: rgba(255,255,255,0.03)}
+		*{box-sizing:border-box}
+		html,body{height:100%}
+		body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.5;background:linear-gradient(180deg,#071026 0%,#071022 60%);color:#e6eef8}
+		header{Padding:28px 20px;display:flex;align-items:center;justify-content:space-between;max-width:1100px;margin:0 auto}
+		.brand{display:flex;gap:14px;align-items:center}
+		.logo{width:48px;height:48px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#00c6ff);display:flex;align-items:center;justify-content:center;font-weight:700;color:#04203a}
+		nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+		nav a:hover{color:#fff}
+
+		.container{max-width:1100px;margin:20px auto;padding:20px}
+		.hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center}
+		.hero-card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:28px;border-radius:12px;backdrop-filter: blur(6px)}
+		h1{margin:0 0 10px;font-size:28px}
+		p.lead{color:var(--muted);margin-top:0}
+
+		.btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600}
+
+		.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px}
+		.service{background:var(--card);padding:16px;border-radius:10px}
+		.service h4{margin:0 0 8px}
+		.portfolio{margin-top:28px}
+		.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+		.item{position:relative;border-radius:10px;overflow:hidden;background:var(--glass);min-height:140px;display:flex;align-items:flex-end}
+		.item img{width:100%;height:100%;object-fit:cover;display:block}
+		.item .meta{position:absolute;left:12px;bottom:12px;color:#fff;background:linear-gradient(90deg,rgba(0,0,0,0.3),transparent);padding:6px 10px;border-radius:8px;font-weight:600}
+
+		form.card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:18px;border-radius:12px;margin-top:18px}
+		label{display:block;margin-bottom:6px;font-size:13px;color:var(--muted)}
+		input[type=text],input[type=email],textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+		textarea{min-height:120px}
+		.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+		.file-preview{display:flex;gap:12px;align-items:center;margin-top:10px}
+		.file-preview img{width:84px;height:60px;object-fit:cover;border-radius:6px;border:1px solid rgba(255,255,255,0.04)}
+		.muted{color:var(--muted);font-size:13px}
+
+		footer{padding:30px 20px;text-align:center;color:var(--muted)}
+
+		@media (max-width:880px){.hero{grid-template-columns:1fr}.row{grid-template-columns:1fr}}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="brand">
+			<div class="logo">SLB</div>
+			<div>
+				<div style="font-weight:700">SLB Solutions</div>
+				<div class="muted" style="font-size:12px">Software • Consulting • Design</div>
+			</div>
+		</div>
+		<nav>
+			<a href="#about">About</a>
+			<a href="#services">Services</a>
+			<a href="#portfolio">Portfolio</a>
+			<a href="#contact">Contact</a>
+		</nav>
+	</header>
+
+	<main class="container">
+		<section class="hero">
+			<div class="hero-card">
+				<h1>We build reliable digital products for businesses</h1>
+				<p class="lead">SLB Solutions delivers web apps, integrations, and consulting to help companies scale. We focus on clarity, performance and business outcomes.</p>
+				<p style="margin-top:18px">
+					<a class="btn" href="#contact">Get a proposal</a>
+					<a class="btn" style="background:transparent;border:1px solid rgba(255,255,255,0.06);margin-left:8px;color:var(--muted)" href="#portfolio">See work</a>
+				</p>
+
+				<div id="about" style="margin-top:18px">
+					<h3 style="margin-bottom:6px">Why choose us</h3>
+					<div class="services" id="services">
+						<div class="service">
+							<h4>Custom Web Apps</h4>
+							<p class="muted">Modern, maintainable applications using progressive web standards.</p>
+						</div>
+						<div class="service">
+							<h4>Systems Integration</h4>
+							<p class="muted">APIs, automation and data pipelines that connect your tools.</p>
+						</div>
+						<div class="service">
+							<h4>UX & Design</h4>
+							<p class="muted">Design systems, prototypes and user testing to reduce risk.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<aside>
+				<div style="background:linear-gradient(180deg,#07182b,#04203a);padding:18px;border-radius:12px;color:var(--muted)">
+					<h3 style="margin:0 0 8px">Quick facts</h3>
+					<ul style="margin:0;padding-left:18px;color:var(--muted)">
+						<li>Founded: 2021</li>
+						<li>Focus: SaaS & enterprise integrations</li>
+						<li>Small, fast teams</li>
+					</ul>
+				</div>
+			</aside>
+		</section>
+
+		<section class="portfolio" id="portfolio">
+			<h3 style="margin-top:10px">Selected work</h3>
+			<p class="muted">Screenshots & short descriptions of projects delivered.</p>
+			<div class="grid" style="margin-top:12px">
+				<div class="item">
+					<img src="https://picsum.photos/seed/alpha/800/600" alt="Project Alpha">
+					<div class="meta">Project Alpha</div>
+				</div>
+				<div class="item">
+					<img src="https://picsum.photos/seed/bravo/800/600" alt="Project Bravo">
+					<div class="meta">Project Bravo</div>
+				</div>
+				<div class="item">
+					<img src="https://picsum.photos/seed/charlie/800/600" alt="Project Charlie">
+					<div class="meta">Project Charlie</div>
+				</div>
+				<div class="item">
+					<img src="https://picsum.photos/seed/delta/800/600" alt="Project Delta">
+					<div class="meta">Project Delta</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" style="margin-top:28px">
+			<h3>Contact SLB Solutions</h3>
+			<p class="muted">Send us a short message and an optional screenshot or brief spec.</p>
+
+			<form id="contactForm" class="card" onsubmit="return false;">
+				<div class="row">
+					<div>
+						<label for="name">Name</label>
+						<input type="text" id="name" placeholder="Your name" required />
+					</div>
+					<div>
+						<label for="email">Email</label>
+						<input type="email" id="email" placeholder="you@company.com" required />
+					</div>
+				</div>
+
+				<div style="margin-top:12px">
+					<label for="message">Message</label>
+					<textarea id="message" placeholder="Tell us about your project"></textarea>
+				</div>
+
+				<div style="margin-top:12px">
+					<label for="file">Attach screenshot or spec (optional)</label>
+					<input type="file" id="file" accept="image/*" />
+					<div class="file-preview" id="previewArea" aria-live="polite"></div>
+				</div>
+
+				<div style="margin-top:12px;display:flex;gap:8px;align-items:center">
+					<button class="btn" id="sendBtn" type="button">Send message</button>
+					<div id="formMsg" class="muted" role="status"></div>
+				</div>
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<div>© <span id="year"></span> SLB Solutions — Built with care</div>
+	</footer>
+
+	<script>
+		// small helper JS: preview upload, validate and save to localStorage as demo
+		document.getElementById('year').textContent = new Date().getFullYear();
+
+		const fileInput = document.getElementById('file');
+		const previewArea = document.getElementById('previewArea');
+		const sendBtn = document.getElementById('sendBtn');
+		const formMsg = document.getElementById('formMsg');
+
+		function clearPreview(){ previewArea.innerHTML = '' }
+
+		fileInput.addEventListener('change', () => {
+			clearPreview();
+			const f = fileInput.files[0];
+			if(!f) return;
+			if(!f.type.startsWith('image/')){ formMsg.textContent = 'Only images allowed.'; return }
+			const img = document.createElement('img');
+			img.alt = 'Preview';
+			img.src = URL.createObjectURL(f);
+			previewArea.appendChild(img);
+			formMsg.textContent = '';
+		});
+
+		function validateEmail(email){ return /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email) }
+
+		sendBtn.addEventListener('click', () => {
+			formMsg.textContent = '';
+			const name = document.getElementById('name').value.trim();
+			const email = document.getElementById('email').value.trim();
+			const message = document.getElementById('message').value.trim();
+
+			if(!name || !email){ formMsg.textContent = 'Please add name and email.'; return }
+			if(!validateEmail(email)){ formMsg.textContent = 'Please provide a valid email.'; return }
+
+			// Simple demo: save to localStorage and show success message
+			const payload = {name,email,message,created: new Date().toISOString()};
+			try{
+				const submissions = JSON.parse(localStorage.getItem('slb_submissions')||'[]');
+				submissions.push(payload);
+				localStorage.setItem('slb_submissions', JSON.stringify(submissions));
+				formMsg.style.color = '#8ff6a7';
+				formMsg.textContent = 'Thanks — message saved locally. We will contact you soon.';
+				// reset form after send
+				document.getElementById('contactForm').reset();
+				clearPreview();
+				setTimeout(()=>{ formMsg.textContent=''; formMsg.style.color=''; }, 5000);
+			}catch(e){
+				formMsg.textContent = 'Could not save message in browser.';
+			}
+		});
+
+		// lightweight accessibility: keyboard focus for item images
+		document.querySelectorAll('.item').forEach(it => { it.tabIndex = 0 });
+	</script>
+</body>
+</html>
